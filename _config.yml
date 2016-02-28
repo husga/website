@@ -18,8 +18,8 @@ destination: _site
 # SEO settings
 description: "A Government for the STUDENTS by the STUDENTS"
 keywords: "SEO, Austin Barrett, Software, Art, Graphic Design, Geek Tricks"
-url: http://austinisa.ninja
-baseurl: ""
+url: http://sga.harrisburgu.edu
+baseurl: "/website"
 # baseurl: "/austinisaninja"
 
 
