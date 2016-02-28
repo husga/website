@@ -2031,8 +2031,8 @@ header.major {
 }
 
 header.special {
-    margin-bottom: 5em;
-    padding-top: 7em;
+    margin-bottom: 4em;
+    padding-top: 4em;
     position: relative;
     text-align: center;
 }
@@ -2929,7 +2929,7 @@ body.index #main {
 
     /* Section/Article */
     header.special {
-        padding-top: 5.5em;
+        padding-top: 4em;
         margin-bottom: 4em;
     }
 

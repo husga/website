@@ -9,7 +9,7 @@ email    : sga@my.harrisburgu.edu
 
 # Build settings
 markdown: kramdown
-highlighter : pygments
+rouge : pygments
 
 comments: true
 
