@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="index">
+<div id="page-wrapper">
+
+    {% include header.html %}
+    <section id="banner">
+
+        <!--
+                ".inner" is set up as an inline-block so it automatically expands
+                in both directions to fit whatever's inside it. This means it won't
+                automatically wrap lines, so be sure to use line breaks where
+                appropriate (<br />).
+            -->
+        <div class="inner">
+            <img src="/images/logo_medium.png" alt=""
+                 style="display: block; width: 256px; clear: both; margin-left: auto; margin-right: auto">
+            <header>
+                <h2>{{ site.title }}</h2>
+            </header>
+            <p>{{ site.description }}</p>
+            <footer>
+                <style>ul li {
+                    margin: .5em
+                }</style>
+                <ul style="display: inline-flex">
+                    {% if site.twitter %}
+                    <li><a href="{{ site.twiiter }}" class="icon circle fa-twitter"><span
+                            class="label">Twitter</span></a>
+                    </li>
+                    {% endif %}
+
+                    {% if site.facebook %}
+                    <li><a href="{{ site.facebook }}" class="icon circle fa-facebook"><span
+                            class="label">Facebook</span></a></li>
+                    {% endif %}
+
+                    {% if site.googleplus %}
+                    <li><a href="{{ site.googleplus }}" class="icon circle fa-google-plus"><span
+                            class="label">Google+</span></a></li>
+                    {% endif %}
+
+                    {% if site.github %}
+                    <li><a href="{{ site.github }}" class="icon circle fa-github"><span class="label">Github</span></a>
+                    </li>
+                    {% endif %}
+
+                    {% if site.email %}
+                    <li><a href="{{ site.email }}" class="icon circle fa-envelope"><span class="label">Email</span></a>
+                    </li>
+                    {% endif %}
+                    <li><a href="harrisburgu.edu" class="icon circle fa-graduation-cap"><span class="label">Harrisburg University</span></a>
+                    </li>
+                </ul>
+            </footer>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+{% include scripts.html %}
+</body>
+</html>
