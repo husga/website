@@ -24,3 +24,5 @@ baseurl: "/website"
 
 
 # disqus_shortname: "fernandomoreira"
+
+exclude: [/examples]

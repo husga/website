@@ -2788,7 +2788,7 @@ input[type="reset"].small,
     cursor: default;
     padding: 6em 0;
     text-align: center;
-    height:100vh;
+    height: 100vh;
 }
 
 #banner .inner {
@@ -2837,6 +2837,14 @@ input[type="reset"].small,
 
 #banner .inner footer {
     margin: 2em 0 0 0;
+}
+
+#bannerLogo {
+    display: block;
+    width: 33%;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Main */
@@ -3489,6 +3497,10 @@ body.index #main {
         display: none;
     }
 
+    #banner {
+        height: 100%;
+    }
+
     /* Main */
     #main {
         background-size: 10em;
@@ -3537,4 +3549,20 @@ body.index #main {
         height: 34px;
     }
 
+}
+
+@media screen and (max-width: 450px) {
+
+    #banner {
+        font-size: 75%;
+        height: 100vh !important;
+    }
+
+    #banner #bannerLogo {
+        width: 50% !important;
+    }
+
+    .icon.circle {
+        font-size: 1.5em;
+    }
 }
