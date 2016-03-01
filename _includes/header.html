@@ -10,10 +10,9 @@
             <li class="submenu">
                 <a href="#">Organizations</a>
                 <ul>
-                    <li><a href="">Maker Club</a></li>
-                    <li><a href="">Asian Culture</a></li>
-                    <li><a href="">Forensic</a></li>
-                    <li><a href="">GIS</a></li>
+                    {% for club in site.data.clubs %}
+                    <li><a href="">{{ club.name }}</a></li>
+                    {% endfor %}
                     <!--<li class="submenu">-->
                         <!--<a href="#">Submenu</a>-->
                         <!--<ul>-->
