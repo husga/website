@@ -11,7 +11,7 @@
                 <a href="#">Organizations</a>
                 <ul>
                     {% for club in site.data.clubs %}
-                    <li><a href="">{{ club.name }}</a></li>
+                    <li><a href="{{ club.link }}">{{ club.name }}</a></li>
                     {% endfor %}
                     <!--<li class="submenu">-->
                         <!--<a href="#">Submenu</a>-->
