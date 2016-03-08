@@ -1,3 +1,11 @@
+# Contains details about the various clubs at HU
+#
+# The description for a club has the following params
+#
+#   name: The name of the club
+#   link: The relative path from the site baseurl to the permalink of the
+#         club's page.
+#
 - name: Maker Club
   link: clubs/maker
 - name: GIS
