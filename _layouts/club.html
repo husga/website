@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body class="index">
-    <div id="page-wrapper">
-
-        {% include header.html %}
-
-        <article id="main">
-            {{ content }}
-        </article>
-
-            {% include footer.html %}
+---
+layout: default
+---
+<div class="row">
+    <div class="md-col-12" style="background-image: url('{{ page.banner }}');">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
     </div>
+</div>
 
-    {% include scripts.html %}
-</body>
-</html>
+<div class="row">
+    <div class="md-col-6">
+        <div class="row"><h2>Officers</h2></div>
+        {% for officer in page.officers %}
+        <div class="md-col-3" style="background-image: url('{{ officer.picture }}');"></div>
+            <div class="showInfo round">
+                <h3>{{ officer.name }}</h3>
+                <h4>{{ officer.role }}</h4>
+                <!-- social stuff -->
+            </div>
+        {% endfor %}
+    </div>
+    <div class="md-col-6">
+        <h2>What's up?</h2>
+        <!-- Facebook stuff here -->
+    </div>
+</div>
