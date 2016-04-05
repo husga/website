@@ -3,7 +3,7 @@ layout: club
 title: Maker Club
 blurb: A community of students devoted to development and creation of new and interesting projects.
 comments: true
-slug: maker
+imageslug: maker
 permalink: /club/maker
 category: club
 officers:

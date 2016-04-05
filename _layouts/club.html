@@ -7,7 +7,7 @@ layout: default
         text-shadow: 1px 1px 0 black;
         background-size: contain;
         background-position: bottom center;
-        background-image: url('{{ site.baseurl }}/images/{{ page.slug }}/banner.jpg');
+        background-image: url('{{ site.baseurl }}/images/{{ page.imageslug }}/banner.jpg');
         background-repeat: no-repeat;
         margin-bottom: 0;
 
@@ -31,7 +31,7 @@ layout: default
         {% for officer in page.officers %}
         <div class="officer 4u">
             <h3>{{ officer.name }}</h3>
-            <img src="{{ site.baseurl }}/images/{{ page.slug }}/{{ officer.name | slugify }}.jpg" alt="{{ officer.name }}">
+            <img src="{{ site.baseurl }}/images/{{ page.imageslug }}/{{ officer.name | slugify }}.jpg" alt="{{ officer.name }}">
             <h4>{{ officer.subtitle }}</h4>
             <!-- social stuff -->
         </div>
