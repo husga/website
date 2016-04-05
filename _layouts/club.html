@@ -1,27 +1,44 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="md-col-12" style="background-image: url('{{ page.banner }}');">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
-    </div>
-</div>
+<style type="text/css">
+    #club-banner {
+        color: white;
+        text-shadow: 1px 1px 0 black;
+        background-size: contain;
+        background-position: bottom center;
+        background-image: url('{{ site.baseurl }}/images/{{ page.slug }}/banner.jpg');
+        background-repeat: no-repeat;
+        margin-bottom: 0;
 
-<div class="row">
-    <div class="md-col-6">
-        <div class="row"><h2>Officers</h2></div>
+    }
+    .officer {
+        text-align: center;
+    }
+    .officer img {
+        border-radius: 50%;
+    }
+</style>
+
+<header id="club-banner" class="special wrapper container">
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.blurb }}</p>
+</header>
+
+<section class="wrapper container style4">
+    <h2>Officers</h2>
+    <div class="row">
         {% for officer in page.officers %}
-        <div class="md-col-3" style="background-image: url('{{ officer.picture }}');"></div>
-            <div class="showInfo round">
-                <h3>{{ officer.name }}</h3>
-                <h4>{{ officer.role }}</h4>
-                <!-- social stuff -->
-            </div>
+        <div class="officer 4u">
+            <h3>{{ officer.name }}</h3>
+            <img src="{{ site.baseurl }}/images/{{ page.slug }}/{{ officer.name | slugify }}.jpg" alt="{{ officer.name }}">
+            <h4>{{ officer.subtitle }}</h4>
+            <!-- social stuff -->
+        </div>
         {% endfor %}
     </div>
     <div class="md-col-6">
         <h2>What's up?</h2>
         <!-- Facebook stuff here -->
     </div>
-</div>
+</section>
